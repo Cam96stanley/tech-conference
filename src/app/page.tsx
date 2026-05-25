@@ -10,6 +10,18 @@ export default function Home() {
         <Button>
           Hello world
         </Button>
+        <Button variant={'tab'}>
+          Tab
+        </Button>
+        <Button variant={'filter'}>
+          Filter
+        </Button>
+        <Button variant={'toggle'}>
+          toggle
+        </Button>
+        <Button variant={'clear'}>
+          clear
+        </Button>
       </main>
     </div>
   );
