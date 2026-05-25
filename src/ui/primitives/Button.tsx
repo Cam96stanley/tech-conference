@@ -31,17 +31,18 @@ const buttonVariants = cva(
           "focus-visible:border-dashed focus-visible:border-dark-red focus-visible:text-dark-red focus-visible:bg-transparent",
         ],
         primary: [
-            "bg-background text-foreground border-2 border-solid border-accent",
-            "hover:bg-accent hover:text-background",
-            "focus-visible:border-dashed",
+          "bg-background text-foreground border-2 border-solid border-accent",
+          "hover:bg-accent hover:text-background",
+          "focus-visible:border-dashed",
         ],
         secondary: [
-            "bg-cyan text-background border-2 border-solid border-transparent",
-            "hover:bg-background hover:text-foreground hover:border-border",
-            "focus-visible:border-2 focus-visible:border-dashed focus-visible:border-border focus-visible:bg-cyan focus-visible:text-background"
-        ]
+          "bg-cyan text-background border-2 border-solid border-transparent",
+          "hover:bg-background hover:text-foreground hover:border-border",
+          "focus-visible:border-2 focus-visible:border-dashed focus-visible:border-border focus-visible:bg-cyan focus-visible:text-background",
+        ],
       },
       size: {
+        menu: "p-3",
         sm: "h-10 px-4",
         md: "h-14 px-8",
         lg: "h-16 px-10",

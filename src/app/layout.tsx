@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Chakra_Petch, JetBrains_Mono } from "next/font/google";
 import "../ui/styles/globals.css";
+import Header from "@/ui/components/Header";
 
 const chakraPetch = Chakra_Petch({
   variable: "--chakra-petch",
@@ -28,7 +29,10 @@ export default function RootLayout({
       lang="en"
       className={`${chakraPetch.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
