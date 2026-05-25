@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --background: #00151D;
+  --foreground: #C2C5C2;
+  --accent: #D1FF66;
+  --beige: #FCEFE8;
+  --yellow: #FFE6BA;
+  --light-red: #FEC9C3;
+  --dark-red: #FF8080;
+  --cyan: #B5E9FC;
+  --purple: #CCC4FD;
+  --blue: #BBD8FF;
+  --border: #49616A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-beige: var(--beige);
+  --color-yellow: var(--yellow);
+  --color-light-red: var(--light-red);
+  --color-dark-red: var(--dark-red);
+  --color-cyan: var(--cyan);
+  --color-purple: var(--purple);
+  --color-blue: var(--blue);
+  --color-border: var(--border);
+  --font-chakra: var(--chakra-petch);
+  --font-mono: var(--mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .text-preset-1 {
+    font-family: var(--font-chakra);
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1;
+    letter-spacing: -0.025em;
+  }
+
+  .text-preset-1-mob {
+    font-family: var(--font-chakra);
+    font-weight: 700;
+    font-size: 2.375rem;
+    line-height: 1;
+    letter-spacing: -0.053em;
+  }
+
+  .text-preset-2 {
+    font-family: var(--font-chakra);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-2-tab {
+    font-family: var(--font-chakra);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.1;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-2-mob {
+    font-family: var(--font-chakra);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-3 {
+    font-family: var(--font-chakra);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-4 {
+    font-family: var(--font-chakra);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-5 {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-5-bold {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-6 {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-6-md {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-6-xb {
+    font-family: var(--font-mono);
+    font-weight: 800;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    letter-spacing: 0em;
+  }
+
+  .text-preset-7 {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: 0.0417em;
+  }
+}
